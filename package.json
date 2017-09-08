@@ -1,0 +1,12 @@
+{
+  "name": "webshot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "shot.js",
+  "author": "jjgrainger",
+  "license": "MIT",
+  "dependencies": {
+    "minimist": "^1.2.0",
+    "puppeteer": "^0.10.2"
+  }
+}
