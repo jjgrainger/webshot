@@ -26,6 +26,12 @@ const name = url.parse(site.replace('www.', '')).hostname.split('.')[0];
 
   await page.waitFor(delay);
 
+  // uncomment to remove elements from the page by selector
+  // await page.$eval('.global-announcement', el => el.remove());
+
+  // uncomment to click element on a page by selector
+  // await page.click('.close-cookie-banner');
+
   await page.evaluate('document.body.style.zoom="'+ zoom + '%";');
 
   await page.screenshot({path: 'shots/' + name + '.png'});
